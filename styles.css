@@ -1,0 +1,71 @@
+/* Base Styling with Gradient Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 350px;   /* Set fixed width for popup */
+    height: 500px;  /* Set fixed height for popup */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* changed from center to top align */
+}
+
+/* Dark Mode with Gradient Background */
+body.dark-mode {
+    background: linear-gradient(135deg, #1e1e1e, #2e2e2e);
+    color: #ffffff;
+}
+
+/* Container Styling with Background Image */
+.container {
+    background: url('https://via.placeholder.com/320x200') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 320px;
+    margin-top: 30px;
+}
+
+body.dark-mode .container {
+    background: url('https://via.placeholder.com/320x200/333333/ffffff') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Input and Button Styling */
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.dark-mode input {
+    background: #555;
+    color: white;
+    border: 1px solid #888;
+}
+
+/* Button Styling with Gradient */
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a);
+}
+

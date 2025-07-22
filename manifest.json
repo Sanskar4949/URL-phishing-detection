@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Phishy Guard - Phishing Detector",
+  "version": "1.0",
+  "description": "Real-time phishing detection for safer browsing using VirusTotal API.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "https://www.virustotal.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
