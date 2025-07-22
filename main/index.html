@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - Phishing Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+    
+    <div class="container">
+        <h1>🔍 PhishGuard</h1>
+        <p class="tagline">Check if a link is safe or a phishing threat!</p>
+        <input type="text" id="urlInput" placeholder="Enter website URL">
+        <button onclick="checkURL()">🔎 Scan URL</button>
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
