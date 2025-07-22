@@ -1,0 +1,83 @@
+/* Default Light Mode */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    color: #ffffff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    transition: background 0.5s, box-shadow 0.5s;
+}
+
+body.dark-mode .container {
+    background: rgba(51, 51, 51, 0.8);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+/* Input and Button Styles */
+input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background 0.3s, border 0.3s;
+}
+
+body.dark-mode input {
+    background: #555;
+    color: white;
+    border: 1px solid #888;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode #darkModeToggle {
+    background: white;
+    color: black;
+}
